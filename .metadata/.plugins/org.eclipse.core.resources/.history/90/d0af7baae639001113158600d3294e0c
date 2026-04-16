@@ -1,0 +1,106 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Line Adventures | One Piece</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #0288d1;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #01579b;
+        }
+        .log-pose {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #fff9c4;
+            border-left: 5px solid #fbc02d;
+            border-radius: 4px;
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #212121;
+            color: #bdbdbd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Set Sail for the Grand Line! ☠️</h1>
+        <p>Join Monkey D. Luffy and the Straw Hat Pirates</p>
+    </header>
+
+    <div class="container">
+        <h2>Wealth, Fame, Power...</h2>
+        <p class="description">
+            Gold Roger, the King of the Pirates, attained everything this world has to offer. 
+            The words he uttered just before his death drove people to the seas: <br><br>
+            <em>"My treasure? If you want it, you can have it. Find it! I left everything this world has to offer there!"</em>
+        </p>
+        
+        <p>Are you ready to claim the <strong>One Piece</strong> and become the next Pirate King?</p>
+        
+        <a href="#join-crew" class="btn">Board the Thousand Sunny</a>
+
+        <div class="log-pose">
+            <h3>🧭 Log Pose Status</h3>
+            <p><strong>Current Server Time in the New World:</strong> <br> <%= new java.util.Date() %></p>
+            <p><em>The magnetic field is stable. Prepare for your next voyage!</em></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <%= java.time.Year.now().getValue() %> Straw Hat Grand Fleet. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
